@@ -1,0 +1,13 @@
+
+version: '2.2'
+services:
+  wolf_pack:
+    build: .
+    scale: 5
+  wolf_pack_sql:
+    build: .
+  wolf_pack_hunter:
+    build: . 
+    scale: 3
+  wolf_pack_infiltrator:
+    build: wolfpack
