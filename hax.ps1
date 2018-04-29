@@ -50,4 +50,4 @@ do {
     start-sleep -Seconds $(Get-Random -Minimum 20 -Maximum 40)
 } until(((Get-Date) - $start).Minutes -ge $runMinutes)
 
-Write-Output "******************************Completed Successfully******************************"
+Write-Output "******************************$($env:hostname) Tasks Completed Successfully******************************"
